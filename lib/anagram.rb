@@ -10,7 +10,7 @@ class Anagram
   end
 
 def split_letters
-  @letters = @base_word.split
+  @letters = @base_word.split("")
   binding.pry
 end
 

@@ -2,7 +2,7 @@
 require 'pry'
 
 class Anagram
-  attr_accessor :base_word :letters
+  attr_accessor :base_word, :letters
 
   def initialize(word)
     anagram = Anagram.new

@@ -18,7 +18,9 @@ class Anagram
   end
 
   def match(words)
-    @test_words = words
+    @test_words = words.split
+    
+    
     binding.pry
   end
 

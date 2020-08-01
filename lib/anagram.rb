@@ -2,9 +2,17 @@
 require 'pry'
 
 class Anagram
-  def initialize
+  attr_accessor :base_word :letters
 
+  def initialize(word)
+    anagram = Anagram.new
+    anagram.base_word = word
+    split_letters
   end
 
+def split_letters
+  @letters = @base_word.split
+  binding.pry
+end
 
 end

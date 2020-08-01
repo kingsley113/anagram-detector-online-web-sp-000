@@ -22,7 +22,7 @@ class Anagram
     @test_words = words
     @test_words.each do |word|
       test_letters = word.split("").sort
-      if @letters == test_letters 
+      if @letters == test_letters
         @matches << test_letters
       end
     end

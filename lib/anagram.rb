@@ -4,7 +4,7 @@ require 'pry'
 class Anagram
   attr_accessor :base_word, :letters
 
-  def initialize(word)
+  def initialize
     anagram = Anagram.new
     anagram.base_word = word
     split_letters

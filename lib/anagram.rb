@@ -2,7 +2,7 @@
 require 'pry'
 
 class Anagram
-  attr_accessor :base_word, :letters, :test_words
+  attr_accessor :base_word, :letters, :test_words, :matches
 
   def initialize(word = "")
     @base_word = word
@@ -18,8 +18,11 @@ class Anagram
   end
 
   def match(words)
-    @test_words = words.split
-
+    @matches = []
+    @test_words = words
+    @test_words.each do |word|
+      test_letters = word.split("").sort
+      if @letters == test_letters {@matches << test_letters}
 
     binding.pry
   end

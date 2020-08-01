@@ -5,8 +5,7 @@ class Anagram
   attr_accessor :base_word, :letters
 
   def initialize(word = "")
-    anagram = Anagram.new
-    anagram.base_word = word
+    @base_word = word
     split_letters
   end
 

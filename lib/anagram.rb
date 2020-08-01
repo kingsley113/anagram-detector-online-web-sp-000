@@ -26,6 +26,7 @@ class Anagram
         @matches << test_letters
       end
     end
+    @matches
     binding.pry
   end
 

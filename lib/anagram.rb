@@ -9,15 +9,17 @@ class Anagram
     split_letters
   end
 
-def split_letters
-  @letters = @base_word.split("").sort
-end
+  def split_letters
+    @letters = @base_word.split("").sort
+  end
 
-def prep_words
+  def prep_words
 
-end
+  end
 
-def match(words)
-  @test_words = words
-  binding.pry
+  def match(words)
+    @test_words = words
+    binding.pry
+  end
+
 end
